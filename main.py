@@ -73,7 +73,7 @@ def create_shortcut(target, shortcut_name, description=""):
     shortcut.save()
 
 if __name__ == "__main__":
-    target_path = r"C:/"
+    target_path = os.path.join(os.path.expanduser("~"), "Desktop")
     shortcut_name = "TKINER SCRIPT"
     create_shortcut(target_path, shortcut_name, "It's better to have an emo RPG project written in x86 assembly "
                                                 "language, so bend your knees")
